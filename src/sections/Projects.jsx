@@ -2,7 +2,7 @@ import { ArrowUpRight, Github } from "lucide-react"
 
 const projects = [
     {
-        title: "Information Chatbot",
+        title: "Student Information Chatbot",
         description: 
         "An AI-powered chatbot that provides accurate and relevant information to students from Cardiff University.",
         image: "/projects/chatbot.png",
