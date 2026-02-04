@@ -3,7 +3,7 @@ import { ChevronDown, ArrowRight, Download, Linkedin, Github, Instagram } from "
 
 const skills = [
     "Java", "JavaScript", "Python", "HTML", "CSS", "SQL", "TypeScript",
-    "Git", "Spring Boot", "Flask", "Junit", "Microsoft Azure Cloud",
+    "Git", "Spring Boot", "Flask", "JUnit", "Microsoft Azure Cloud",
     "React", "TailwindCSS", "Prompt Engineering"
 ];
 
