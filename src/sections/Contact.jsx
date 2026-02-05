@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Instagram, Github } from "lucide-react";
 import { Button } from "@/components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -17,11 +17,18 @@ const contactInfo = [
         href: "tel:+447498547241",
     },
     {
+        icon: Instagram,
+        label: "Instagram",
+        value: "@_feifairyfaye_",
+        href: "https://www.instagram.com/_feifairyfaye_/",
+    },
+
+    {
         icon: MapPin,
         label: "Location",
         value: "London, UK",
         href: "https://maps.app.goo.gl/qjZ5MAKX1HqvrhKdA",
-    }
+    },
 ]
 
 export const Contact = () => {
@@ -118,7 +125,7 @@ export const Contact = () => {
                             <div>
                                 <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
                                 <textarea 
-                                rows={5}
+                                rows={3}
                                 id="message" 
                                 required
                                 placeholder="Your message"

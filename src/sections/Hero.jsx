@@ -13,9 +13,7 @@ export const Hero = () => {
             {/* Background */}
             <div className="absolute inset-0">
                 <div
-                // src="/PandaWallpaper.jpg"
-                // alt="Hero image"
-                className="w-full h-full object-cover opacity-40 bg-rose-800"/>
+                className="w-full h-full object-cover opacity-40 "/>
             <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background"/>
             </div>
 
@@ -24,7 +22,7 @@ export const Hero = () => {
                 {[...Array(30)].map((_, i) => (
                     <div className="absolute w-1.5 h-1.5 rounded-full opacity-60"
                     style={{
-                        backgroundColor: "#20B2A6",
+                        backgroundColor: "#ffb7c5",
                         left: `${Math.random() * 100}%`,
                         top: `${Math.random() * 100}%`,
                         animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
@@ -65,23 +63,26 @@ export const Hero = () => {
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                             <Button size="lg">
+                                <a href="#contact" className="flex items-center gap-2">
                                 Contact Me <ArrowRight className="w-5 h-5"/>
+                                </a>
                             </Button>
-                            <button size="lg"
-                            className="relative bg-transparent border border-border
-                            text-foreground hover:border-primary/50 transition-all
-                            duration-500 focus:outline-none focus:visible:ring-2 
-                            focus:ring-primary focus-visible:ring-offset-2
-                            disabled:opacity-50 disabled:cursor-not-allowed group
-                            px-8 py-4 text-lg font-medium rounded-full overflow-visible">
+                            <a size="lg"
+                            href="/CV.pdf"
+                            download
+                            className="flex items-center gap-2 bg-tranparent
+                            border border-border text-foreground hover:border-primary/50
+                            transition-all duration-500 focus:outline-none focus:visible:ring-2
+                            px-8 py-4 text-lg font-medium rounded-full overflow-hidden"
+                            >
                                 <span className="relative z-10 flex items-center justify-center gap-2">
                                     Download CV <Download className="w-5 h-5"/>
                                 </span>
-                            </button>
+                            </a>
                         </div>
                         {/* Social links */}
                         <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-                            <span className="text-sm text-muted-foreground">Follow me: </span>
+                            <span className="text-medium text-muted-foreground">Follow me: </span>
                             {[
                                 { icon: Github, href: "https://github.com/feifei1002" },
                                 { icon: Linkedin, href: "https://www.linkedin.com/in/feiliu1002/" },
@@ -110,21 +111,6 @@ export const Hero = () => {
                                 alt="Fei Liu"
                                 className="w-full aspect-4/5 object-cover rounded-2xl"/>
 
-                                {/* Floating Badge */}
-                                {/* <div className="absolute -bottom-4 -4right-4 glass rounded-xl px-4 py-3 animate-float">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
-                                        <span className="text-sm font-medium">Available for work</span>
-                                    </div>
-                                </div> */}
-
-                                {/* Stats Badge */}
-                                {/* <div>
-                                    <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500 ">
-                                        <div className="text-2xl font-bold text-primary">King's College London</div>
-                                        <div className="text-2xl font-bold text-primary">Cardiff University</div>
-                                    </div>
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -132,7 +118,7 @@ export const Hero = () => {
 
                 {/* Skills Section */}
                 <div className="mt-20 animate-fade-in animation-delay-600">
-                    <p className="text-sm text-muted-foreground mb-6 text-center">
+                    <p className="text-medium text-muted-foreground mb-6 text-center">
                         Technologies I work with
                     </p>
                     <div className="relative overflow-hidden">

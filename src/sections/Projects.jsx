@@ -96,7 +96,9 @@ export const Projects = () => {
                     disabled:opacity-50 disabled:cursor-not-allowed group
                     px-8 py-4 text-lg font-medium rounded-full overflow-visible">
                         <span className="relative z-10 flex items-center justify-center gap-2">
-                            Show All Projects <ArrowUpRight className="w-5 h-5"/>
+                            <a href="https://github.com/feifei1002" className="flex items-center gap-2">
+                                Show All Projects <ArrowUpRight className="w-5 h-5"/>
+                            </a>
                         </span>
                     </button>
                 </div>

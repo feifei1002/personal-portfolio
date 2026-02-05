@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #041418;
-  --color-foreground: #f0f2f5;
+  --color-background: #1a1617;
+  --color-foreground: #f8f1f2;
 
-  --color-card: #141a1f;
+  --color-card: #251f21;
 
-  --color-primary: #20b2a6;
-  --color-primary-foreground: #ffffff;
+  --color-primary: #e2a9b3;
+  --color-primary-foreground: #1a1617;
 
-  --color-secondary: #1f2830;
-  --color-secondary-foreground: #20b2a6;
+  --color-secondary: #32292b;
+  --color-secondary-foreground: #e2a9b3;
 
-  --color-muted: #252e37;
-  --color-muted-foreground: #7a8491;
+  --color-muted: #3d3436;
+  --color-muted-foreground: #a69195;
 
-  --color-border: #242b32;
+  --color-border: #3d3436;
 
   --radius: 0.75rem;
 
-  --color-highlight: #f5a623;
-  --color-surface: #1a2329;
+  --color-highlight: #f2d5cf;
+  --color-surface: #2b2325;
 }
 
 @layer base {
@@ -50,6 +50,12 @@
     background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
     backdrop-filter: blur(24px);
     border: 1px solid color-mix(in srgb, var(--color-border) 60%, transparent);
+  }
+
+  .glass-nav {
+    background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+    backdrop-filter: blur(24px);
+    border: none;
   }
 
   .glow-text {

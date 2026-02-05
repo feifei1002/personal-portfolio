@@ -1,6 +1,6 @@
 import { Menu, XIcon } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Button } from "../components/Button";
+import { Button } from "@/components/Button";
 
 
 const navLinks = [
@@ -26,10 +26,10 @@ export const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
     return (
-        <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
+        <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-nav py-3" : "bg-transparent py-5"} z-50`}>
             <nav className="container mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-                    PM<span className="text-primary">.</span>
+                <a href="" className="text-xl font-bold tracking-tight hover:text-primary">
+                    FL<span className="text-primary">.</span>
                 </a>
 
                 {/* Desktop Nav */}
@@ -48,7 +48,7 @@ export const Navbar = () => {
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <Button size="sm">Contact Me</Button>
+                    <Button size="sm"><a href="#contact">Contact Me</a></Button>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -72,7 +72,7 @@ export const Navbar = () => {
                                 </a>
                         ))}
 
-                        <Button onClick={() =>setIsMobileMenuOpen(false)}>Contact Me</Button>
+                        <Button onClick={() =>setIsMobileMenuOpen(false) }>Contact Me</Button>
                     </div>
                 </div>
             )}
