@@ -5,6 +5,7 @@ import { Experience } from "@/sections/Experience";
 import { Education } from "@/sections/Education";
 import { Contact } from "@/sections/Contact";
 import { Navbar } from "@/layout/Navbar";
+import { Footer } from "@/layout/Footer";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Education />
         <Contact />
       </main>
+
+      <Footer />
     </div>
   )
 }

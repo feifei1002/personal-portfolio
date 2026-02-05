@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Instagram, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Linkedin } from "lucide-react";
 import { Button } from "@/components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -17,10 +17,10 @@ const contactInfo = [
         href: "tel:+447498547241",
     },
     {
-        icon: Instagram,
-        label: "Instagram",
-        value: "@_feifairyfaye_",
-        href: "https://www.instagram.com/_feifairyfaye_/",
+        icon: Linkedin,
+        label: "LinkedIn",
+        value: "feiliu1002",
+        href: "https://www.linkedin.com/in/feiliu1002/",
     },
 
     {

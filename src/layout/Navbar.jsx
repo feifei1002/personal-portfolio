@@ -4,10 +4,12 @@ import { Button } from "@/components/Button";
 
 
 const navLinks = [
+    {href: "", label: "Home"},
     {href: "#about", label: "About"},
     {href: "#projects", label: "Projects"},
     {href: "#experience", label: "Experience"},
     {href: "#education", label: "Education"},
+    {href: "#contact", label: "Contact"},
 ];
 
 export const Navbar = () => {
