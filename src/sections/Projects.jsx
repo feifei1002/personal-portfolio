@@ -97,7 +97,7 @@ export const Projects = () => {
                     px-8 py-4 text-lg font-medium rounded-full overflow-visible">
                         <span className="relative z-10 flex items-center justify-center gap-2">
                             <a href="https://github.com/feifei1002" className="flex items-center gap-2">
-                                Show All Projects <ArrowUpRight className="w-5 h-5"/>
+                                More Projects <ArrowUpRight className="w-5 h-5"/>
                             </a>
                         </span>
                     </button>

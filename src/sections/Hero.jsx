@@ -40,7 +40,7 @@ export const Hero = () => {
                         <div className="animate-fade-in">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                                    Graduate Software Engineer
+                                    Software Engineer
                             </span>
                         </div>
 
@@ -54,9 +54,11 @@ export const Hero = () => {
                                 </span>
                             </h1>
                             <p className="text-xl text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                                Hello and Welcome to my page! I'm a passionate software engineer 
-                                recently graduated from <span className="text-red-500 font-semibold">King's College London</span>. 
-                                I love building web applications and exploring new technologies.
+                                Hello and Welcome to my page! <br />
+                                Take your time and enjoy your stay. <br />
+                                If you want to know more about me,
+                                feel free to scroll down,
+                                explore or use the button below to contact me!
                             </p>
                         </div>
 
