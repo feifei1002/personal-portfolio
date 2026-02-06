@@ -109,7 +109,7 @@ export const Hero = () => {
                             from-primary/30 via-transparent
                             to-primary/20 blur-2xl animate-pulse"/>
                             <div className="relative glass rounded-3xl p-2 glow-border">
-                                <img src="/profile-photo.jpg"
+                                <img src="/profile_photo.jpg"
                                 alt="Fei Liu"
                                 className="w-full aspect-4/5 object-cover rounded-2xl"/>
 

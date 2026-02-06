@@ -15,7 +15,7 @@ const highlights = [
     {
         icon: CookingPot,
         title: "My Hobbies",
-        description: "Outside of tech, I enjoy cooking, baking, and crocheting—hands-on hobbies that let me experiment, create, and pay attention to detail.",
+        description: "Outside of tech, I enjoy cooking, baking, and crocheting, hobbies that let me experiment, create, and pay attention to detail.",
     },
     {
         icon: Music,
@@ -28,7 +28,7 @@ const highlights = [
 
 export const About = () => {
     return (
-        <section id="about" className="py-32 relative overflow-hidden">
+        <section id="about" className="py-20 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
                 {/* Section Header */}
                 <div className="text-center mx-auto max-w-3xl mb-16">

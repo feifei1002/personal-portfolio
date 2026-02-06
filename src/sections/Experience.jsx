@@ -12,7 +12,7 @@ const experiences = [
         period: "2023.09 - 2024.06",
         role: "Taiwanese Society President",
         company: "Cardiff University Students Union",
-        description: "Organized events and activities to promote Taiwanese culture and foster a sense of community among Taiwanese students at Cardiff University.",
+        description: "Organised events and activities to promote Taiwanese culture and foster a sense of community among Taiwanese students at Cardiff University.",
         technologies: [],
         current: false
     },
@@ -37,7 +37,7 @@ const experiences = [
 
 export const Experience = () => {
     return (
-        <section id="experience" className="py-32 relative overflow-hidden">
+        <section id="experience" className="py-20 relative overflow-hidden">
             <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"/>
 
             <div className="container mx-auto px-6 relative z-10">
