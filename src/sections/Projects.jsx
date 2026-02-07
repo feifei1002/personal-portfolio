@@ -1,10 +1,14 @@
 import { ArrowUpRight, Github } from "lucide-react"
+import { useTranslation } from "react-i18next";
 
-const projects = [
+
+export const Projects = () => {
+    const { t } = useTranslation();
+
+    const projects = [
     {
-        title: "Student Information Chatbot",
-        description: 
-        "An AI-powered chatbot that provides accurate and relevant information to students from Cardiff University.",
+        title: t("projectTitle1"),
+        description: t("projectDesc1"),
         image: "/projects/chatbot.png",
         tags: ["JavaScript", "Python", "Nuxt 3", "TailwindCSS", "TypeScript", "Vue", "Qdrant", "Deepgram", "OpenAI", "TogetherAI", "AnthropicAI"],
         link: "https://cu-chatbot.kavin.rocks",
@@ -12,9 +16,8 @@ const projects = [
     },
 
     {
-        title: "Warehouse Racking System Website",
-        description: 
-        "A website for a warehouse racking system company, showcasing their products and services with a modern and responsive design.",
+        title: t("projectTitle2"),
+        description: t("projectDesc2"),
         image: "/projects/jfrack.png",
         tags: ["Java", "HTML", "CSS", "Spring Boot", "Microsoft Azure Cloud"],
         link: "https://www.jfrack.com",
@@ -22,7 +25,6 @@ const projects = [
     },
 ]
 
-export const Projects = () => {
     return (
         <section id="projects" className="py-20 relative overflow-hidden">
             {/* Background glows */}
@@ -32,13 +34,13 @@ export const Projects = () => {
                 {/* Section Header */}
                 <div className="text-center mx-auto max-w-3xl mb-16">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-                        Featured Work
+                        {t("myProjects")}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-                        Projects that I have worked on
+                        {t("projectSubtitle")}
                     </h2>
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
-                        A selection of projects showcasing my skills in web development, AI integration, and responsive design.
+                        {t("projectDesc")}
                     </p>
                 </div>
 
@@ -97,7 +99,7 @@ export const Projects = () => {
                     px-8 py-4 text-lg font-medium rounded-full overflow-visible">
                         <span className="relative z-10 flex items-center justify-center gap-2">
                             <a href="https://github.com/feifei1002" className="flex items-center gap-2">
-                                More Projects <ArrowUpRight className="w-5 h-5"/>
+                                {t("moreProjects")} <ArrowUpRight className="w-5 h-5"/>
                             </a>
                         </span>
                     </button>

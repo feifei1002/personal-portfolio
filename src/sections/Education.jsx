@@ -1,23 +1,27 @@
-const education = [
+import { useTranslation } from "react-i18next";
+
+export const Education = () => {
+    const { t } = useTranslation();
+
+    const education = [
     {
         logo: "/logo/kcl_logo.png",
-        institution: "King's College London",
-        degree: "Master of Science in Advanced Software Engineering",
+        institution: t("institution1"),
+        degree: t("degree1"),
         period: "2024 - 2025",
-        location: "London, UK",
-        grade: "Merit - 69%",
+        location: t("location1"),
+        grade: t("grade1"),
     },
     {
         logo: "/logo/cu_logo.png",
-        institution: "Cardiff University",
-        degree: "Bachelor of Science in Applied Software Engineering",
+        institution: t("institution2"),
+        degree: t("degree2"),
         period: "2021 - 2024",
-        location: "Cardiff, UK",
-        grade: "Upper Second Class Honours - 67%",
+        location: t("location2"),
+        grade: t("grade2"),
     },
 ]
 
-export const Education = () => {
     return (
         <section id="education" className="py-20 relative overflow-hidden">
             {/* Background glows */}
@@ -27,10 +31,10 @@ export const Education = () => {
                 {/* Section Header */}
                 <div className="text-center mx-auto max-w-3xl mb-16">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-                        Education
+                        {t("myEducation")}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-                        My Academic Background
+                        {t("myAcademicBackground")}
                     </h2>
                 </div>
 

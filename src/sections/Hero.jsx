@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
 import { ChevronDown, ArrowRight, Download, Linkedin, Github, Instagram } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const skills = [
     "Java", "JavaScript", "Python", "HTML", "CSS", "SQL", "TypeScript",
@@ -8,6 +9,8 @@ const skills = [
 ];
 
 export const Hero = () => {
+    const {t} = useTranslation();
+
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
             {/* Background */}
@@ -40,7 +43,7 @@ export const Hero = () => {
                         <div className="animate-fade-in">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                                    Software Engineer
+                                    {t("title")}
                             </span>
                         </div>
 
@@ -54,11 +57,12 @@ export const Hero = () => {
                                 </span>
                             </h1>
                             <p className="text-xl text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                                Hello and Welcome to my page! <br />
+                                {/* Hello and Welcome to my page! <br />
                                 Take your time and enjoy your stay. <br />
                                 If you want to know more about me,
                                 feel free to scroll down,
-                                explore or use the button below to contact me!
+                                explore or use the button below to contact me! */}
+                                {t("greeting")}
                             </p>
                         </div>
 
@@ -66,7 +70,7 @@ export const Hero = () => {
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                             <Button size="lg">
                                 <a href="#contact" className="flex items-center gap-2">
-                                Contact Me <ArrowRight className="w-5 h-5"/>
+                                {t("contactMe")} <ArrowRight className="w-5 h-5"/>
                                 </a>
                             </Button>
                             <a size="lg"
@@ -78,13 +82,13 @@ export const Hero = () => {
                             px-8 py-4 text-lg font-medium rounded-full overflow-hidden"
                             >
                                 <span className="relative z-10 flex items-center justify-center gap-2">
-                                    Download CV <Download className="w-5 h-5"/>
+                                    {t("downloadCV")} <Download className="w-5 h-5"/>
                                 </span>
                             </a>
                         </div>
                         {/* Social links */}
                         <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-                            <span className="text-medium text-muted-foreground">Follow me: </span>
+                            <span className="text-medium text-muted-foreground">{t("followMe")}</span>
                             {[
                                 { icon: Github, href: "https://github.com/feifei1002" },
                                 { icon: Linkedin, href: "https://www.linkedin.com/in/feiliu1002/" },
@@ -121,7 +125,7 @@ export const Hero = () => {
                 {/* Skills Section */}
                 <div className="mt-20 animate-fade-in animation-delay-600">
                     <p className="text-medium text-muted-foreground mb-6 text-center">
-                        Technologies I work with
+                        {t("technologies")}
                     </p>
                     <div className="relative overflow-hidden">
                         <div className="flex animate-marquee">
@@ -138,7 +142,7 @@ export const Hero = () => {
             </div>
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
                 <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group">
-                <span className="text-xs uppercase tracking-wider">Scroll</span>
+                <span className="text-xs uppercase tracking-wider">{t("scroll")}</span>
                 <ChevronDown className="w-6 h-6 animate-bounce" />
                 </a>
             </div>

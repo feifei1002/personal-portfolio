@@ -2,17 +2,22 @@ import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Linkedin } from "l
 import { Button } from "@/components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
-const contactInfo = [
+
+export const Contact = () => {
+    const { t } = useTranslation();
+
+    const contactInfo = [
     {
         icon: Mail,
-        label: "Email",
+        label: t("contactEmail"),
         value: "liufei520.02@gmail.com",
         href: "mailto:liufei520.02@gmail.com",
     },
     {
         icon: Phone,
-        label: "Phone",
+        label: t("contactPhone"),
         value: "+44 7498 547241",
         href: "tel:+447498547241",
     },
@@ -25,13 +30,12 @@ const contactInfo = [
 
     {
         icon: MapPin,
-        label: "Location",
+        label: t("contactLocation"),
         value: "London, UK",
         href: "https://maps.app.goo.gl/qjZ5MAKX1HqvrhKdA",
     },
 ]
 
-export const Contact = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -65,13 +69,13 @@ export const Contact = () => {
 
             setSubmitStatus({ 
                 type: "success", 
-                message: "Your message has been sent successfully! I'll get back to you soon."});
+                message: t("submitMessageSuccess")});
             setFormData({ name: "", email: "", message: ""});
         } catch (error) {
             console.error("Error sending email:", error);
             setSubmitStatus({ 
                 type: "error", 
-                message: error.text || "There was an error sending your message. Please try again later."});
+                message: error.text || t("submitMessageError")});
         } finally {
             setIsLoading(false);
         }
@@ -86,10 +90,10 @@ export const Contact = () => {
                 {/* Section Header */}
                 <div className="text-center mx-auto max-w-3xl mb-16">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-                        Get in Touch
+                        {t("getInTouch")}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-                        Contact Me
+                        {t("contactMe")}
                     </h2>
                 </div>
 
@@ -97,11 +101,11 @@ export const Contact = () => {
                     <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
                         <form className="space-y-6" onSubmit={handleSubmit}> 
                             <div>
-                                <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
+                                <label htmlFor="name" className="block text-sm font-medium mb-2">{t("contactName")}</label>
                                 <input id="name" 
                                 type="text" 
                                 required
-                                placeholder="Your name"
+                                placeholder={t("contactNamePlaceholder")}
                                 value={formData.name}
                                 onChange={(e) =>
                                     setFormData({...formData, name: e.target.value})
@@ -110,11 +114,11 @@ export const Contact = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
+                                <label htmlFor="email" className="block text-sm font-medium mb-2">{t("contactEmail")}</label>
                                 <input id="email" 
                                 type="email" 
                                 required
-                                placeholder="your@email.com"
+                                placeholder={t("contactEmailPlaceholder")}
                                 value={formData.email}
                                 onChange={(e) =>
                                     setFormData({...formData, email: e.target.value})
@@ -123,12 +127,12 @@ export const Contact = () => {
                             </div>
 
                             <div>
-                                <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
+                                <label htmlFor="message" className="block text-sm font-medium mb-2">{t("contactMessage")}</label>
                                 <textarea 
                                 rows={3}
                                 id="message" 
                                 required
-                                placeholder="Your message"
+                                placeholder={t("contactMessagePlaceholder")}
                                 value={formData.message}
                                 onChange={(e) =>
                                     setFormData({...formData, message: e.target.value})
@@ -139,11 +143,11 @@ export const Contact = () => {
                             <Button className="w-full" type="submit" size="lg" disabled={isLoading}>
                                 {isLoading ? (
                                     <>
-                                    Sending...
+                                    {t("sending")}...
                                     </>
                                 ) : (
                                     <>
-                                    Send Message
+                                    {t("contactSubmit")}
                                     <Send className="w-5 h-5"/>
                                     </>
                                 )}
@@ -173,7 +177,7 @@ export const Contact = () => {
                     <div className="space-y-6 animate-fade-in animation-delay-400">
                         <div className="glass rounded-3xl p-8 border border-primary/30">
                             <h3 className="text-xl font-semibold mb-6">
-                                Contact Information
+                                {t("contactInfo")}
                             </h3>
                             <div className="space-y-4">
                                 {contactInfo.map((info, index) => (

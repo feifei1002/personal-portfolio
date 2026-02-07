@@ -1,41 +1,45 @@
+import { useTranslation } from "react-i18next";
 
-const experiences = [
+
+export const Experience = () => {
+    const { t } = useTranslation();
+
+    const experiences = [
     {
         period: "2021.10 - 2024.07",
-        role: "STEM Ambassador",
+        role: t("role1"),
         company: "technocamps",
-        description: "Promoted STEM to children and young adults around schools and libraries in Wales and delivered workshops on Lego Spike, Microbit and simple HTML and CSS.",
+        description: t("description1"),
         technologies: ["Lego Spike", "Microbit", "HTML", "CSS"],
         current: false
     },
     {
         period: "2023.09 - 2024.06",
-        role: "Taiwanese Society President",
+        role: t("role2"),
         company: "Cardiff University Students Union",
-        description: "Organised events and activities to promote Taiwanese culture and foster a sense of community among Taiwanese students at Cardiff University.",
+        description: t("description2"),
         technologies: [],
         current: false
     },
     {
         period: "2023.07 - 2023.08",
-        role: "Web Developer",
+        role: t("role3"),
         company: "J&F Industries International Co., Ltd",
-        description: "Designed a website for a company that manufactures warehouse racking systems.",
+        description: t("description3"),
         technologies: ["Java", "HTML", "CSS", "Spring Boot", "Microsoft Azure Cloud"],
         current: false
     },
     {
         period: "2022.09 - 2023.06",
-        role: "Student Academic Representative",
+        role: t("role4"),
         company: "Cardiff University",
-        description: "Represented students in academic matters and facilitated communication between students and university.",
+        description: t("description4"),
         technologies: [],
         current: false
     },
     
 ]
 
-export const Experience = () => {
     return (
         <section id="experience" className="py-20 relative overflow-hidden">
             <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"/>
@@ -44,13 +48,13 @@ export const Experience = () => {
                 {/* Section Header */}
                 <div className="text-center mx-auto max-w-3xl mb-16">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase">
-                        Career Journey
+                        {t("careerJourney")}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-secondary-foreground animate-fade-in animation-delay-100">
-                        My Experience
+                        {t("myExperience")}
                     </h2>
                     <p className="text-muted-foreground animate-fade-in animation-delay-200">
-                        A summary of my professional experiences, roles, and responsibilities.
+                        {t("experienceSubtitle")}
                     </p>
                 </div>
                 {/* Timeline */}

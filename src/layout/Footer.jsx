@@ -1,4 +1,5 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/feifei1002", label: "GitHub" },
@@ -6,16 +7,19 @@ const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/_feifairyfaye_/", label: "Instagram" },
 ];
 
-const footerLinks = [
-  { href: "", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
-  { href: "#contact", label: "Contact" },
-];
-
 export const Footer = () => {
+
+  const { t } = useTranslation();
+
+  const footerLinks = [
+  { href: "", label: t("home") },
+  { href: "#about", label: t("about") },
+  { href: "#projects", label: t("projects") },
+  { href: "#experience", label: t("experience") },
+  { href: "#education", label: t("education") },
+  { href: "#contact", label: t("contact") },
+];
+  
   const currentYear = new Date().getFullYear();
 
   return (

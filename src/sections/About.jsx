@@ -1,32 +1,36 @@
+import { t } from "i18next";
 import { House, Languages, CookingPot, Music } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 
-const highlights = [
+
+export const About = () => {
+    const { t } = useTranslation();
+
+    const highlights = [
     {
         icon: House,
-        title: "Where I'm From",
-        description: "I was born in the beautiful island nation of Taiwan — home of bubble milk tea and the iconic Taipei 101, famously climbed by Alex Honnold on Netflix. I later grew up in Vietnam, the birthplace of beloved dishes like phở and bánh mì.",
+        title: t("whereIAmFrom"),
+        description: t("whereIAmFromDesc"),
     },
     {
         icon: Languages, 
-        title: "Languages I Speak",
-        description: "I’m fluent in English, Mandarin, and Vietnamese, which allows me to collaborate effectively across cultures and teams.",
+        title: t("languagesISpeak"),
+        description: t("languagesISpeakDesc"),
     },
     {
         icon: CookingPot,
-        title: "My Hobbies",
-        description: "Outside of tech, I enjoy cooking, baking, and crocheting, hobbies that let me experiment, create, and pay attention to detail.",
+        title: t("myHobbies"),
+        description: t("myHobbiesDesc"),
     },
     {
         icon: Music,
-        title: "My Music Taste",
-        description: "I’m a K-pop fan, with a particular interest in girl groups like aespa and boy groups such as SEVENTEEN.",
+        title: t("myMusicTaste"),
+        description: t("myMusicTasteDesc"),
     },
 
 ]
 
-
-export const About = () => {
     return (
         <section id="about" className="py-20 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
@@ -34,15 +38,15 @@ export const About = () => {
                 <div className="text-center mx-auto max-w-3xl mb-16">
                     <div className="animate-fade-in">
                         <span className="text-secondary-foreground text-sm-font-medium tracking-wider uppercase">
-                            About Me
+                            {t("aboutMe")}
                         </span>
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-                        A passionate software engineer, 
+                        {t("aboutTitle1")}
                         <span className="font-serif italic font-normal text-white">
                             {" "}
-                            evolving through every line of code.
+                            {t("aboutTitle2")}
                         </span>
                             
 

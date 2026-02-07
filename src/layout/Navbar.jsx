@@ -1,18 +1,22 @@
 import { Menu, XIcon } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/Button";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 
-const navLinks = [
-    {href: "", label: "Home"},
-    {href: "#about", label: "About"},
-    {href: "#projects", label: "Projects"},
-    {href: "#experience", label: "Experience"},
-    {href: "#education", label: "Education"},
-    {href: "#contact", label: "Contact"},
-];
 
 export const Navbar = () => {
+    const { t } = useTranslation();
+
+    const navLinks = [
+    {href: "", label: t("home")},
+    {href: "#about", label: t("about")},
+    {href: "#projects", label: t("projects")},
+    {href: "#experience", label: t("experience")},
+    {href: "#education", label: t("education")},
+    {href: "#contact", label: t("contact")},
+];
+
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -48,9 +52,9 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                {/* CTA Button */}
+                {/* Language Switcher Button */}
                 <div className="hidden md:block">
-                    <Button size="sm"><a href="#contact">Contact Me</a></Button>
+                <LanguageSwitcher />
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -74,7 +78,7 @@ export const Navbar = () => {
                                 </a>
                         ))}
 
-                        <Button onClick={() =>setIsMobileMenuOpen(false) }>Contact Me</Button>
+                        <LanguageSwitcher />
                     </div>
                 </div>
             )}
