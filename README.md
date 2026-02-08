@@ -1,10 +1,3 @@
-I'll create a comprehensive README for your portfolio. Let me first check your package.json to get some details: 
-
-Read [](file:///c%3A/Users/liufe/OneDrive/%E6%A1%8C%E9%9D%A2/Fei/personal-portfolio/package.json#1-1), lines 1 to 30
-
-Here's a professional README for your portfolio:
-
-```markdown
 # Fei Liu Personal Portfolio
 
 A modern, responsive personal portfolio website showcasing my software engineering projects, experience, and skills. Built with React, Vite, and TailwindCSS with multi-language support.
