@@ -103,10 +103,9 @@ Users can manually switch via the language selector in the navbar.
 
 For inquiries or collaboration:
 - 📧 Email: liufei520.02@gmail.com
-- 📱 Phone: +44 7498 547241
 - 💼 LinkedIn: [feiliu1002](https://www.linkedin.com/in/feiliu1002/)
 - 🐙 GitHub: [feifei1002](https://github.com/feifei1002)
-- 📸 Instagram: [@_feifairyfaye_](https://www.instagram.com/_feifairyfaye_/)
+
 
 ---
 
