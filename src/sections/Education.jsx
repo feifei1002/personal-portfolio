@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { ArrowUpRight } from "lucide-react";
 
 export const Education = () => {
     const { t } = useTranslation();
@@ -11,6 +12,7 @@ export const Education = () => {
         period: "2024 - 2025",
         location: t("location1"),
         grade: t("grade1"),
+        link: "https://www.kcl.ac.uk/study/postgraduate-taught/courses/advanced-software-engineering-msc",
     },
     {
         logo: "/logo/cu_logo.png",
@@ -19,6 +21,7 @@ export const Education = () => {
         period: "2021 - 2024",
         location: t("location2"),
         grade: t("grade2"),
+        link: "https://www.cardiff.ac.uk/study/undergraduate/courses/course/applied-software-engineering-bsc",
     },
 ]
 
@@ -46,10 +49,16 @@ export const Education = () => {
                         className="group glass rounded-2xl gap-6 p-6 overflow-hidden animate-fade-in md:row-span-1"
                         style={{animationDelay: `${index * 100}ms`}}>
                             {/* Image for the education */}
-                            <div className="relative shrink-0 w-24 h-24 rounded-lg overflow-hidden">
+                            <div className="relative shrink-0 w-32 h-32 rounded-lg overflow-hidden">
                                 <img src={edu.logo} alt={edu.institution}
                                 className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"/>
-                            <div className="absolute inset-0 bg-linear-to-t from card via-card/50 to transparent opacity-60"/>
+                                <div className="absolute inset-0 bg-linear-to-t from card via-card/50 to transparent opacity-60"/>
+                                {/* Overlay links */}
+                                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <a href={edu.link} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
+                                        <ArrowUpRight className="w-5 h-5"/>
+                                    </a>
+                                </div>
                             </div>
                             {/*  Content */}
                             <div className="py-6 space-y-1">

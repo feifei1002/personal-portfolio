@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Globe, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const languages = [
     { code: "en", label: "English", flagUrl: "https://flagcdn.com/gb.svg" },
@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
                 className="w-full md:w-auto flex items-center justify-between md:justify-center gap-2 px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface transition-colors"
             >
                 <div className="flex items-center gap-2">
-                    <Globe size={18} />
+                    <img src={languages.find(lang => lang.code === i18n.language)?.flagUrl} alt={`${languages.find(lang => lang.code === i18n.language)?.label} flag`} className="w-5 h-5 rounded-sm" />
                     <span className="hidden sm:inline">{languages.find(lang => lang.code === i18n.language)?.label || i18n.language}</span>
                 </div>
                 <ChevronDown size={16} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />

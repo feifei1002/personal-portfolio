@@ -96,23 +96,23 @@ i18n.use(initReactI18next).init({
             translation: {
                 // Hero Section
                 title: "軟體工程師",
-                greeting: "你好，歡迎來到我的頁面！請慢慢瀏覽，如果你想了解更多關於我的資訊，請隨意向下滑動，探索或使用下面的按鈕與我聯繫！",
+                greeting: "你好，歡迎你來到我的個人網站！請慢慢瀏覽，享受你的時光吧! 如果你想了解更多關於我的資訊，請隨意向下滑動，探索或使用下面的按鈕與我聯繫！",
                 contactMe: "聯繫我",
-                downloadCV: "下載履歷",
+                downloadCV: "下載我的履歷",
                 followMe: "追蹤我：",
                 technologies: "我使用的技術：",
-                scroll: "滾動",
+                scroll: "滑動",
 
                 // About Section
                 aboutMe: "關於我",
                 aboutTitle1: "一位充滿熱情的軟體工程師，",
-                aboutTitle2: "透過每一行程式碼不斷成長。",
+                aboutTitle2: "透過每一行程式碼不斷的成長。",
                 whereIAmFrom: "我的故鄉",
-                whereIAmFromDesc: "我出生於美麗的台灣，台灣以珍珠奶茶和標誌性的台北101而聞名。後來我在越南長大，那是越南粉和越南麵包的發源地。",
+                whereIAmFromDesc: "我出生於美麗的台灣，台灣以珍珠奶茶和標誌性的台北101而聞名。後來我在越南長大，那是越南粉和越式法國麵包的發源地。",
                 languagesISpeak: "我會說的語言",
-                languagesISpeakDesc: "我流利使用英語、中文和越南語，這使我能夠在不同文化和團隊間有效合作。",
+                languagesISpeakDesc: "我精通英文、中文和越南文，這使我能夠有效地與不同文化背景和團隊合作。",
                 myHobbies: "我的興趣",
-                myHobbiesDesc: "在科技之外，我喜歡烹飪、烘焙和鉤針編織，這些興趣讓我能夠嘗試、創造並注重細節。",
+                myHobbiesDesc: "在科技領域之外，我還喜歡烹飪、烘焙和鉤針編織，這些興趣讓我能夠嘗試、創造並注重細節。",
                 myMusicTaste: "我的音樂品味",
                 myMusicTasteDesc: "我是一名K-pop粉絲，特別喜歡aespa等女團和SEVENTEEN等男團。",
 
@@ -122,21 +122,21 @@ i18n.use(initReactI18next).init({
                 projectDesc: "展示我在網頁開發、AI整合和網頁設計方面技能的專案選集。",
                 projectTitle1: "學生資訊聊天機器人",
                 projectDesc1: "一個由人工智慧驅動的聊天機器人，為卡迪夫大學的學生提供準確且相關的資訊。",
-                projectTitle2: "倉庫貨架系統網站",
-                projectDesc2: "一個為倉庫貨架系統公司設計的網站，展示其產品和服務，具有現代且響應式的設計。",
+                projectTitle2: "倉儲貨架系統網站",
+                projectDesc2: "一個為倉儲貨架系統公司設計的網站，展示其產品和服務，具有現代且響應式的設計。",
                 moreProjects: "更多專案",
 
                 // Experience Section
                 careerJourney: "職業旅程",
                 myExperience: "我的經驗",
-                experienceSubtitle: "我的專業經驗、角色和職責的總結。",
+                experienceSubtitle: "我的專業經驗、角色和職責概述。",
                 role1: "STEM 大使",
-                description1: "在威爾士的學校和圖書館向兒童和年輕人推廣STEM，並協助主持了關於Lego Spike、Microbit以及簡單HTML和CSS的教學。",
+                description1: "在威爾斯的學校和圖書館向兒童和青少年推廣 STEM（科學、技術、工程和數學），並舉辦了關於 Lego Spike、Microbit 和簡單的 HTML 和 CSS 的教學。",
                 role2: "台灣學生會會長",
-                description2: "組織活動以推廣台灣文化，並促進卡迪夫大學台灣學生之間的社群感。",
+                description2: "組織活動以推廣台灣文化，並凝聚卡迪夫大學的台灣學生。",
                 role3: "網頁開發人員",
-                description3: "為一家生產倉庫貨架系統的公司設計了一個網站。",
-                role4: "學生學術代表",
+                description3: "為一家生產倉儲貨架系統的公司設計了網站。",
+                role4: "學生代表",
                 description4: "代表學生處理學術事務，促進學生與大學之間的溝通。",
 
                 // Education Section
@@ -182,7 +182,7 @@ i18n.use(initReactI18next).init({
             translation: {
                 // Hero Section
                 title: "Kỹ sư phần mềm",
-                greeting: "Xin chào và chào mừng đến với trang cá nhân của tôi! Hãy dành thời gian và tận hưởng kỳ nghỉ của bạn. Nếu bạn muốn biết thêm về tôi, hãy thoải mái cuộn xuống, khám phá hoặc sử dụng nút bên dưới để liên hệ với tôi!",
+                greeting: "Chào mừng bạn đến với trang của tôi! Hãy dành thời gian và tận hưởng khoảng thời gian của bạn ở đây. Nếu bạn muốn biết thêm về tôi, hãy thoải mái kéo xuống, khám phá hoặc sử dụng nút bên dưới để liên hệ với tôi!",
                 contactMe: "Liên hệ với tôi",
                 downloadCV: "Tải xuống CV",
                 followMe: "Theo dõi tôi:",
@@ -192,13 +192,13 @@ i18n.use(initReactI18next).init({
                 // About Section
                 aboutMe: "Về tôi",
                 aboutTitle1: "Một kỹ sư phần mềm đam mê,",
-                aboutTitle2: "không ngừng phát triển qua từng dòng mã code.",
+                aboutTitle2: "không ngừng phát triển qua từng dòng code.",
                 whereIAmFrom: "Quê quán của tôi",
-                whereIAmFromDesc: "Tôi sinh ra ở hòn đảo xinh đẹp Đài Loan — quê hương của trà sữa trân châu và tòa nhà Taipei 101 nổi tiếng. Sau đó, tôi lớn lên ở Việt Nam, quê hương của các món ăn được yêu thích như phở và bánh mì.",
+                whereIAmFromDesc: "Tôi sinh ra ở quốc đảo xinh đẹp Đài Loan — quê hương của trà sữa trân châu và tòa nhà biểu tượng Taipei 101. Sau đó, tôi lớn lên ở Việt Nam, quê hương của những món ăn được yêu thích như phở và bánh mì.",
                 languagesISpeak: "Các ngôn ngữ tôi nói",
-                languagesISpeakDesc: "Tôi thành thạo tiếng Anh, tiếng Trung và tiếng Việt, điều này giúp tôi hợp tác hiệu quả giữa các nền văn hóa và hoạt động nhóm.",
+                languagesISpeakDesc: "Tôi thành thạo tiếng Anh, tiếng Trung và tiếng Việt, điều này giúp tôi hợp tác hiệu quả giữa các nền văn hóa và hoạt động nhóm khác nhau.",
                 myHobbies: "Sở thích của tôi",
-                myHobbiesDesc: "Ngoài công nghệ, tôi thích nấu ăn, làm bánh và móc len, những sở thích giúp tôi thử nghiệm, sáng tạo và chú ý đến chi tiết.",
+                myHobbiesDesc: "Ngoài lĩnh vực công nghệ, tôi thích nấu ăn, làm bánh và móc len, những sở thích cho phép tôi thử nghiệm, sáng tạo và chú ý đến chi tiết.",
                 myMusicTaste: "Gu âm nhạc của tôi",
                 myMusicTasteDesc: "Tôi là một fan K-pop, đặc biệt yêu thích các nhóm nữ như aespa và các nhóm nam như SEVENTEEN.",
             
@@ -209,7 +209,7 @@ i18n.use(initReactI18next).init({
                 projectTitle1: "Chatbot Thông tin Sinh viên",
                 projectDesc1: "Một chatbot được hỗ trợ bởi AI cung cấp thông tin cho sinh viên của Đại học Cardiff.",
                 projectTitle2: "Trang web Hệ thống Kệ kho",
-                projectDesc2: "Một trang web cho công ty hệ thống kệ kho, giới thiệu sản phẩm và dịch vụ của họ với thiết kế hiện đại và đáp ứng.",
+                projectDesc2: "Một trang web cho công ty làm hệ thống kệ kho, giới thiệu sản phẩm và dịch vụ của họ với thiết kế hiện đại và đáp ứng.",
                 moreProjects: "Xem thêm dự án",
 
                 // Experience Section
@@ -217,9 +217,9 @@ i18n.use(initReactI18next).init({
                 myExperience: "Kinh nghiệm của tôi",
                 experienceSubtitle: "Tóm tắt các kinh nghiệm chuyên môn, vai trò và trách nhiệm của tôi.",
                 role1: "Đại sứ STEM",
-                description1: "Quảng bá STEM cho trẻ em và thanh thiếu niên tại các trường học và thư viện ở Wales và tổ chức các hội thảo về Lego Spike, Microbit và HTML và CSS đơn giản.",
+                description1: "Quảng bá STEM cho trẻ em và thanh thiếu niên tại các trường học và thư viện ở xứ Wales, đồng thời tổ chức các buổi học về Lego Spike, Microbit và HTML, CSS cơ bản.",
                 role2: "Chủ tịch Hội người Đài Loan",
-                description2: "Tổ chức các sự kiện và hoạt động để quảng bá văn hóa Đài Loan và thúc đẩy cảm giác cộng đồng giữa sinh viên Đài Loan tại Đại học Cardiff.",
+                description2: "Tổ chức các sự kiện và hoạt động nhằm quảng bá văn hóa Đài Loan và thúc đẩy tinh thần cộng đồng giữa các sinh viên Đài Loan tại Đại học Cardiff.",
                 role3: "Lập trình viên web",
                 description3: "Thiết kế một trang web cho một công ty sản xuất hệ thống kệ kho.",
                 role4: "Đại diện sinh viên",
