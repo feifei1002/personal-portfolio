@@ -10,7 +10,7 @@ i18n.use(initReactI18next).init({
             translation: {
                 // Hero Section
                 title: "Software Engineer",
-                greeting: "Hello and Welcome to my page! Take your time and enjoy your stay. If you want to know more about me,feel free to scroll down, explore or use the button below to contact me!",
+                greeting: "Hello and Welcome to my page! Take your time and enjoy your stay. If you want to know more about me, feel free to scroll down, explore or use the button below to contact me!",
                 contactMe: "Contact Me",
                 downloadCV: "Download CV",
                 followMe: "Follow me:",
