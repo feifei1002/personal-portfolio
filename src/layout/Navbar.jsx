@@ -2,6 +2,7 @@ import { Menu, XIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import logo1 from "@/assets/logo1.png";
 
 
 
@@ -34,9 +35,13 @@ export const Navbar = () => {
     return (
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-nav py-3" : "bg-transparent py-5"} z-50`}>
             <nav className="container mx-auto px-6 flex items-center justify-between">
-                <a href="" className="text-xl font-bold tracking-tight hover:text-primary">
-                    FL<span className="text-primary">.</span>
-                </a>
+                <a href="/" className="flex items-center">
+                    <img
+                        src={logo1}
+                        alt="Fei Liu Logo"
+                        className="h-10 w-auto"
+                    />
+                    </a>
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-1">

@@ -1,5 +1,6 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import logo from "@/assets/logo1.png";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/feifei1002", label: "GitHub" },
@@ -28,8 +29,12 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
-            <a href="" className="text-xl font-bold tracking-tight">
-              FL<span className="text-primary">.</span>
+            <a href="/" className="inline-flex items-center">
+              <img
+                src={logo}
+                alt="Fei Liu Logo"
+                className="h-10 w-auto"
+              />
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               © {currentYear} Fei Liu. All rights reserved.
